@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/01fbb324c0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/ddev.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header"><i class="fa fa-home" style="color:red"></i>Home</a></li>
+                        <li><a href="#about"><i class="fa fa-user" style="color:red"></i>About</a></li>
+                        <li><a href="#services"><i class="fa fa-desktop" style="color:red"></i>Services</a></li>
+                        <li><a href="#portfolio"><i class="fa fa-suitcase" style="color:red"></i>Portfolio</a></li>
+                        <li><a href="#contact"><i class="fa fa-id-card" style="color:red"></i></i>Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()" ></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()" ></i>
+                </nav>
+
+                <div class="header-text">
+                    <p>Hi! Welcome to my creative journey...</p>
+                    <h1>I'm <span>Devendra Kumar</span> </h1>
+                    <p id="job-role">A Front End Developer | UX/UI Designer</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------About section------------------------------------------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row1">
+                <h1 class="sub-title2">About <span id="subtitles-color"> Me</span> </h1>
+            </div>
+            <div class="row">
+                <div class="about-col-1"><img src="images/devi.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"></h1>
+                    <p>Highly motivated and creative front-end developer with a passion for creating visually
+                        appealing and user-friendly websites. I bring a unique blend of technical expertise and creative
+                        flair to my work, allowing me to craft immersive digital experiences that captivate users.
+                        <br> As a creative person, I approach front-end development as an art form, combining my
+                        technical skills with an eye for design to produce visually stunning and engaging websites.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Work Experience</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+
+                        <div class="job-role"> <span id="A"> Data Tagger - Chatbot Development </span></div>
+                        <div class="company"> <a href="http://evc.ventures/" target="_blank"> <span id="X"> EVC Labs
+                                    Private Limited</span></a> | <span id="Y"> Portfolio Company:</span><a
+                                href="https://www.blackbelthelp.com/" target="_blank"> <span id="Z">
+                                    BlackBeltHelp</span></a> </div>
+                        <div class="location"><i class="fa-solid fa-calendar-days"></i> Nov/2021 - Present <span
+                                id="loc"> <i class="fa-solid fa-location-dot"></i> <b> Gurugram</b></span></div>
+                        <div class="acheivments">
+                            <ul>
+                                <li><i class="fa-solid fa-feather-pointed fa-sm" style="color: red;"></i> Experienced in Google Dialogflow, train AI Chatbots and maintain the knowledge base with organized data.</li>
+
+                                <li><i class="fa-solid fa-feather-pointed fa-sm" style="color: red;"></i> Experienced in designing and implementing MongoDB-driven chat clients for diverse chatbot applications with efficient data processing  and management.</li>
+                                <li><i class="fa-solid fa-feather-pointed fa-sm" style="color: red;"></i> Experienced in
+                                    WordPress, involving in the development, integration, and maintenance
+                                    of lexicons, ultimately improving the user experience and facilitating knowledge
+                                    acquisition within the WordPress ecosystem.</li>
+                                <li><i class="fa-solid fa-feather-pointed fa-sm" style="color: red;"></i> Guided Front-End Developers in optimizing UI/UX through suitable color selections,  designing chat icons and chatbot theming, resulting in elevated user engagement and cohesive brand representation.</li>    
+                               
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <div class="ram">
+                            <div class="skills1">
+
+                                <h5>HTML</h5>
+                                <div class="progress-bar">
+                                    <div class="html"><span>75%</span></div>
+                                </div>
+                                <h5>CSS</h5>
+                                <div class="progress-bar">
+                                    <div class="css"><span>65%</span></div>
+                                </div>
+                                <h5>Javascript</h5>
+                                <div class="progress-bar">
+                                    <div class="javascript"><span>70%</span></div>
+                                </div>
+                                <h5>React</h5>
+                                <div class="progress-bar">
+                                    <div class="react"><span>50%</span></div>
+                                </div>
+                                <h5>Bootstrap</h5>
+                                <div class="progress-bar">
+                                    <div class="bootstrap"><span>75%</span></div>
+                                </div>
+                                <h5>Wordpress</h5>
+                                <div class="progress-bar">
+                                    <div class="wordpress"><span>40%</span></div>
+                                </div>
+                                
+
+                            </div>
+                            <div class="skills1">
+
+                                <h5>Google Dialogflow</h5>
+                                <div class="progress-bar">
+                                    <div class="google-dialogflow"><span>75%</span></div>
+                                </div>
+
+                                <h5>Mongo DB</h5>
+                                <div class="progress-bar">
+                                    <div class="mongo-db"><span>50%</span></div>
+                                </div>
+
+                                <h5>Python</h5>
+                                <div class="progress-bar">
+                                    <div class="python"><span>50%</span></div>
+                                </div>
+                                
+                                <h5>Version Control</h5>
+                                <div class="progress-bar">
+                                    <div class="version-control"><span>50%</span></div>
+                                </div>
+
+                                <h5>Adobe Photoshop</h5>
+                                <div class="progress-bar">
+                                    <div class="adobe-photoshop"><span>60%</span></div>
+                                </div>
+                                <h5>Figma</h5>
+                                <div class="progress-bar">
+                                    <div class="figma"><span>70%</span></div>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="tab-contents" id="certifications">
+
+                        <div class="C1">
+                            <div class="course"><a href="images/Meta Front-End Developer Certificate.pdf" target="_blank"> <i
+                                        class="fa-solid fa-square-up-right" style="color: red;"></i></a> Meta Front-End
+                                Developer
+
+                                <span id="P">  2023 <i class="fa-solid fa-calendar-days" style="color: #3388AA;"></i> </span>
+                            </div>
+                            <div class="platform"> Online Course: <span id="pp"> Meta, Coursera</span></div>
+                        </div>
+                        <div class="C2">
+                            <div class="course"><a href="images/React Certificate.jpg" target="_blank"> <i
+                                        class="fa-solid fa-square-up-right" style="color: red;"></i></a> The Ultimate
+                                React
+                                Course
+                                <span id="P"> 2023  <i class="fa-solid fa-calendar-days"style="color: #3388AA;"></i> </span>
+                            </div>
+                            <div class="platform"> Online Course: <span id="pp"> Udemy.com</span></div>
+                        </div>
+                        <div class="C3">
+                            <div class="course"><a href="images/JavaScript Certificate.jpg" target="_blank"> <i 
+                                        class="fa-solid fa-square-up-right" style="color: red;"></i></a> The Complete
+                                JavaScript Course
+                                <span id="P">  2023 <i class="fa-solid fa-calendar-days"style="color: #3388AA;"></i> </span>
+                            </div>
+                            <div class="platform"> Online Course: <span id="pp"> Udemy.com</span></div>
+                        </div>
+                        <div class="C4">
+                            <div class="course"><a href="images/Python Programming Certificate.jpg" target="_blank"> <i
+                                        class="fa-solid fa-square-up-right" style="color: red;"></i></a> Python
+                                Programming
+
+                                <span id="P">  2022 <i class="fa-solid fa-calendar-days"style="color: #3388AA;"></i> </span>
+                            </div>
+                            <div class="platform"> Offine Course: <span id="pp"> E-Gain Software Educational Institute </span></div>
+                        </div>
+
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <div class="C1">
+                            <div class="course">Bachelor of Technology (<span id="H"> Hons.</span>)
+                                <span id="P">  2018 <i class="fa-solid fa-calendar-days" style="color: #3388AA;"></i> </span>
+                            </div>
+                            <div class="platform"> <span id="pp"> Dr. A.P.J. Abdul Kalam Technical University, Lucknow
+                                </span></div>
+                        </div>
+                        <div class="C2">
+                            <div class="course"> Senior Secondary School, CBSE
+                                <span id="P">  2014 <i class="fa-solid fa-calendar-days"style="color: #3388AA;"></i> </span>
+                            </div>
+                            <div class="platform"> <span id="pp"> Shanti Niketan Public School, Agra</span> </div>
+                        </div>
+                        <div class="C3">
+                            <div class="course"> Higher Secondary School, CBSE
+                                <span id="P">  2011 <i class="fa-solid fa-calendar-days"style="color: #3388AA;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+                            </div>
+                            <div class="platform"><span id="pp"> Agra Vanasthali School, Agra</span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------------------------------------------SERVICES SECTION--------------------------------------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title2">My <span id="subtitles-color"> Services</span> </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development & Web Designing</h2>
+                    <p>Developes captivating, user-centric Websites and Apps.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-bots"></i>
+                    <h2>Chatbot Development</h2>
+                    <p>Builds Conversational AI Chatbot <br>Dialogflow ES | Dialogflow EX </p>
+                    <a href="#"></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Information Architecture, Wireframing, Prototyping, Visual Design</p>
+                    <a href="#" style="color: red;"></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <h2>Art Work</h2>
+                    <p>Artistry Unleashed: Sketching. Painting. Boundless Creativity.</p>
+                    <a href="#dev"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------Portfolio----------------------------------------------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title2">My<span id="subtitles-color"> Work</span> </h1>
+            <div class="work-list">
+                
+                
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            TextEmender
+                        </h3>
+                        <p>React-based "Text-Editor App"</p>
+                        <a href="https://dev-textemender.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="images/ToDoList.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            ToDoLista
+                        </h3>
+                        <p> JavaScript-based "To-Do List Application" </p>
+                        <a href="https://devendra-kumar28.github.io/ToDOLista/#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/w10.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            The Enquirer Times
+                        </h3>
+                        <p>React-based "News App"</p>
+                        <a href="https://the-enquirer-times.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work8.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            Artistry
+                        </h3>
+                        <p>JavaScript based Art Gallery</p>
+                        <p>My artistic realm,<br> where creativity knows no boundaries.</p>
+                        <a href="https://devendra-kumar28.github.io/Artistry.github.io/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work11.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            UX/UI Design Work
+                        </h3>
+                        <p>Intuitive Designs for the Digital Age</p>
+                        <a href="https://www.figma.com/proto/LHmEaE5HL73FzjxRpAVBEg/Multifactor-Authenticator?type=design&node-id=2-4&t=RSimFXvPoI6gl6H3-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A4&show-proto-sidebar=1&mode=design" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/comsoon.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            Coming soon...
+                        </h3>
+                        <p>Stay Tuned!</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/comsoon.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            Coming soon...
+                        </h3>
+                        <p>Stay Tuned!</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/comsoon.png" alt="">
+                    <div class="layer">
+                        <h3>
+                            Coming soon...
+                        </h3>
+                        <p>Stay Tuned!</p>
+                        <a href="" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+
+
+
+            </div>
+
+        </div>
+        <div id="load-more"> <a class="btn"> See More </a> </div>
+    </div>
+
+
+    <!--------------------------------------------------------------------------------------Contact Me----------------------------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row1">
+                <h1 class="sub-title2">Contact <span id="subtitles-color"> Me</span> </h1>
+            </div>
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"></h1>
+                    <p class="email-id"><i class="fa-solid fa-envelope"></i> dgrahi28@gmail.com </p>
+                    <p class="phone-number"><i class="fa-solid fa-square-phone"></i> 8448603700</p>
+                    <p class="phone-number"><i class="fa-brands fa-square-whatsapp"></i> 8448603700</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/devendra-kr/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Devendra-Kumar28" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+
+                    </div>
+                    <a class="btn btn2" href="images/DevCV.pdf" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Please Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Please Enter Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> &copy 2023 <i class="fa-brands fa-dev"></i> <b> DEV</b> - All Rights Reserved. <i
+                    class="fa-regular fa-steering-wheel"></i> P<i class="fa-brands fa-superpowers"></i>wered By
+                <span><b> Devendra Kumar</b></span>
+            </p>
+
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        let loadMoreBtn = document.querySelector('#load-more');
+        let currentItem = 4;
+
+        loadMoreBtn.onclick = () => {
+            let boxes = [...document.querySelectorAll('.container .work-list .work')];
+            for (var i = currentItem; i < currentItem + 4; i++) {
+                boxes[i].style.display = 'inline-block';
+            }
+            currentItem += 4;
+
+            if (currentItem >= boxes.length) {
+                loadMoreBtn.style.display = 'none';
+            }
+        }
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+        
+    </script>
+</body>
+
+</html>
