@@ -77,7 +77,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 23%;
     font-size: 30px;
 }
 .header-text h1{
@@ -763,7 +763,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px) {
     #header{
-        background-image: url(images/phone-background.png);
+        background-image: url(images/Dev\ Phone\ Background.png);
     }
     .header-text{
         margin-top: 100%;
@@ -771,6 +771,11 @@ nav .fas{
     }
     .header-text h1{
        
+        font-size: 30px;
+    }
+
+    #job-role{
+        margin-top: 10px;
         font-size: 30px;
     }
 
